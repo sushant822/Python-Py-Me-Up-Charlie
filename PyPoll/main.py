@@ -24,7 +24,6 @@ with open(csvpath, newline='') as csvfile:
     csv_header = next(csvfile)
 
     for row in csvreader:
-        
         # Now let us calculate total votes casted
         total_vote += 1
         

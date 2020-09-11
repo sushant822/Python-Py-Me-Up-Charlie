@@ -72,7 +72,6 @@ state = []
 #with open(csvpath, 'r') as csvfile:  
     #csvreader = csv.DictReader(csvfile)
 with open(csvpath, newline='') as csvfile:
-    
     # Since it is a csv file, the delimiter is set to ','
     csvreader = csv.reader(csvfile, delimiter=',')
     csv_header = next(csvreader)

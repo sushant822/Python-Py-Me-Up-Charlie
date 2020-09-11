@@ -17,7 +17,6 @@ csvpath = os.path.join('Resources/budget_data.csv')
 
 # Let us open the csv file. newline='' would get rid of the blank line that will be added after every row
 with open(csvpath, newline='') as csvfile:
-    
     # Since it is a csv file, the delimiter is set to ','
     csvreader = csv.reader(csvfile, delimiter=',')
     
@@ -36,7 +35,6 @@ with open(csvpath, newline='') as csvfile:
     max_increase_month = row[0]
     
     for row in csvreader:
-        
         # Now let us calculate total number of months
         total_months += 1
         
@@ -65,7 +63,6 @@ with open(csvpath, newline='') as csvfile:
     # Now, in order to calculate average change, all we need to do is add all the values stored in monthly change
     # and divide it by the number of values stored in that same list
     average_change = sum(monthly_change)/ len(monthly_change)
-    
     
     # Highest and lowest values in monthly change can be calculated by using the max and min function
     highest = max(monthly_change)
